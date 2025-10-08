@@ -92,6 +92,7 @@ const Form = (props: Props) => {
 
     const onSubmit = async (data: FormValues) => {
         // Check if cookies coming in data object
+        console.log("Form values", data)
         const { non_field_error, ...formVal } : any = data;
         if(!formVal.start_after_save) formVal.start_after_save = false;
         if(props.id) formVal['id'] = props.id;
