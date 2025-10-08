@@ -248,7 +248,6 @@ const Form = (props: Props) => {
                           error={Boolean(errors.cookies?.message)}
                           helperText={errors.cookies?.message}
                           defaultValue={data?.cookies}
-                          onChange={() => clearErrors('cookies')}
                           name="cookies"
                           label="Cookies"
                           required={true}
